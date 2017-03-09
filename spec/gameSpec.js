@@ -44,9 +44,10 @@ describe('game', function(){
     Game.nought(1,1);
     expect(function(){Game.nought(2,2);}).toThrow("O has won the game");
   });
-
-
-
-
-
+  it('should not allow to override existing entries', function(){
+    Game.reset();
+    Game.nought(0,0);
+    Game.cross(0,0);
+    expect(Game.board()[0][0]).toEqual("O");
+  });
 });

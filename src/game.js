@@ -10,13 +10,15 @@ var Game = (function(getWinner){
   };
 
   var noughts = function(x,y){
-    board[x][y] = "O";
+    if (board[x][y] !== "X" && board[x][y] !== "O"){board[x][y] = "O";}
     getWinner.winner(board);
+    print.print(board);
   };
 
   var crosses = function(x,y){
-    board[x][y] = "X";
+    if (board[x][y] !== "X" && board[x][y] !== "O"){board[x][y] = "X";}
     getWinner.winner(board);
+    print.print(board);
   };
 
   var reset = function(){
