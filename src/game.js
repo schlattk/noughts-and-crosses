@@ -1,16 +1,19 @@
 'use strict';
 
-var Account = function(){
-  this.balance = 0;
-  this.record = [];
-};
+var Game = (function(){
 
-Account.prototype.deposit = function(money){
-  this.balance += money;
-  this.record.push({date : new Date(), credit : money, debit : "    ", balance : this.balance});
-};
+  var board = [["","",""],["","",""],["","",""]];
 
-Account.prototype.withdraw = function(money){
-  this.balance -= money;
-  this.record.push({date : new Date(), credit : "    ", debit : money, balance : this.balance});
-};
+  var getBoard = function(){
+    return board
+  }
+
+  var noughts = function(x,y){
+    board[x][y] = "0"
+  }
+
+  return {getBoard:getBoard,
+          noughts:noughts
+    }
+
+})();
