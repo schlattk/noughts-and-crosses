@@ -1,15 +1,17 @@
-'use strict';
+
 
 var Game = (function(getWinner){
 
-  var board = [["","",""],["","",""],["","",""]];
+  board = [[" ",""," "],["","  ",""],[" ",""," "]];
 
   var getBoard = function(){
+    print.print(board);
     return board;
   };
 
   var noughts = function(x,y){
-    board[x][y] = "0";
+    board[x][y] = "O";
+    getWinner.winner(board);
   };
 
   var crosses = function(x,y){
@@ -17,9 +19,14 @@ var Game = (function(getWinner){
     getWinner.winner(board);
   };
 
+  var reset = function(){
+    board = [[" ",""," "],["","  ",""],[" ",""," "]];
+  };
+
   return {board:getBoard,
           nought:noughts,
-          cross:crosses
+          cross:crosses,
+          reset:reset
          };
 
-}(getWinner));
+}(getWinner,print));
