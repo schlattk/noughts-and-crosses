@@ -10,14 +10,14 @@ describe('game', function(){
       expect(Game.nought).toBeDefined();
   });
   it('nought should put a nought on a specified field on the board', function(){
-      Game.nought(0,1)
+      Game.nought(0,1);
       expect(Game.board()[0][1]).toEqual("0");
   });
   it('should have a cross function', function(){
       expect(Game.cross).toBeDefined();
   });
   it('cross should put a cross on a specified field on the board', function(){
-      Game.cross(2,2)
+      Game.cross(2,2);
       expect(Game.board()[2][2]).toEqual("X");
   });
 });

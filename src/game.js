@@ -1,6 +1,6 @@
 'use strict';
 
-var Game = (function(){
+var Game = (function(getWinner){
 
   var board = [["","",""],["","",""],["","",""]];
 
@@ -14,12 +14,12 @@ var Game = (function(){
 
   var crosses = function(x,y){
     board[x][y] = "X";
+    getWinner.winner(board);
   };
 
   return {board:getBoard,
           nought:noughts,
           cross:crosses
-  };
+         };
 
-
-})();
+}(getWinner));
