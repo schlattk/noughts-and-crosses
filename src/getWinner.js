@@ -27,8 +27,8 @@ var getWinner = (function(){
     else if(board[0][0] === board[1][1] && board[2][2] === board[1][1]){
       throw (board[0][0] + " has won the game");
     }
-    else if(board[0][2] === board[1][1] && board[2][2] === board[2][0]){
-      throw (board[0][0] + " has won the game");
+    else if(board[0][2] === board[1][1] && board[2][0] === board[0][2]){
+      throw (board[0][2] + " has won the game");
     }
 
 };

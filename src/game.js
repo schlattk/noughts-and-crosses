@@ -1,8 +1,7 @@
 
-
 var Game = (function(getWinner){
 
-  board = [[" ",""," "],["","  ",""],[" ",""," "]];
+  var board = [[" ",""," "],["","  ",""],[" ",""," "]];
 
   var getBoard = function(){
     print.print(board);

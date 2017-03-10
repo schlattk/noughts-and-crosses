@@ -50,4 +50,5 @@ describe('game', function(){
     Game.cross(0,0);
     expect(Game.board()[0][0]).toEqual("O");
   });
+
 });
