@@ -30,19 +30,22 @@ describe('game', function(){
     Game.reset();
     Game.cross(0,0);
     Game.cross(0,1);
-    expect(function(){Game.cross(0,2);}).toThrow("X has won the game");
+    Game.cross(0,2);
+    expect(getWinner.winner(Game.board())).toEqual(("X has won the game !"));
   });
   it('should return winner if the board has three crosses in a column', function(){
     Game.reset();
     Game.cross(0,0);
     Game.cross(0,1);
-    expect(function(){Game.cross(0,2);}).toThrow("X has won the game");
+    Game.cross(0,2);
+    expect(getWinner.winner(Game.board())).toEqual(("X has won the game !"));
   });
   it('should return winner if the board has three noughts in a row', function(){
     Game.reset();
     Game.nought(0,0);
     Game.nought(1,1);
-    expect(function(){Game.nought(2,2);}).toThrow("O has won the game");
+    Game.nought(2,2);
+    expect(getWinner.winner(Game.board())).toEqual(("O has won the game !"));
   });
   it('should not allow to override existing entries', function(){
     Game.reset();

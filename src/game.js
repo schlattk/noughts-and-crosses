@@ -1,5 +1,5 @@
 
-var Game = (function(getWinner){
+var Game = (function(){
 
   var board = [[" ",""," "],["","  ",""],[" ",""," "]];
 
@@ -9,16 +9,18 @@ var Game = (function(getWinner){
   };
 
   var noughts = function(x,y){
-    if (board[x][y] !== "X" && board[x][y] !== "O"){board[x][y] = "O";}
-    getWinner.winner(board);
-    print.print(board);
+    if (validation.valid(x,y,board)){board[x][y] = "O";}
+      print.print(board);
+      // getWinner.winner(board);
+      print.printWin(board);
   };
 
   var crosses = function(x,y){
-    if (board[x][y] !== "X" && board[x][y] !== "O"){board[x][y] = "X";}
-    getWinner.winner(board);
-    print.print(board);
-  };
+    if (validation.valid(x,y,board)){board[x][y] = "X";}
+      print.print(board);
+      // getWinner.winner(board);
+      print.printWin(board);
+    };
 
   var reset = function(){
     board = [[" ",""," "],["","  ",""],[" ",""," "]];
@@ -30,4 +32,4 @@ var Game = (function(getWinner){
           reset:reset
          };
 
-}(getWinner,print));
+}(validation,getWinner,print));
