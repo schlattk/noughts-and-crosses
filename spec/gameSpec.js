@@ -53,5 +53,10 @@ describe('game', function(){
     Game.cross(0,0);
     expect(Game.board()[0][0]).toEqual("O");
   });
+  it('should not allow to put an entry outside the board', function(){
+    Game.reset();
+    Game.nought(0,3);
+    expect(Game.board()[0][3]).toEqual(undefined);
+  });
 
 });
