@@ -31,54 +31,38 @@ Inputs are made by giving two arguments either nought or cross along a grid
 with row info first (0,1 or 2)
 and then column (0,1,2)
 
-double entries and entries outside the grid log "invalid entry" awaiting a valid entry.
-if a player wins a winner message is displayed in the console.
+double entries and entries outside the grid log "invalid entry", awaiting a valid entry.
+if a player wins, a winner message is displayed in the console.
 
-0 0 1 2
-1 0 1 2
-2 0 1 2
-
-Game.nought(1,1)
-Array [ " ", "", " " ]  print.js:4:5
-Array [ "", "O", "" ]  print.js:5:5
-Array [ " ", "", " " ]  print.js:6:5
-undefined  print.js:9:5
-undefined
-Game.cross(0,2)
-Array [ " ", "", "X" ]  print.js:4:5
-Array [ "", "O", "" ]  print.js:5:5
-Array [ " ", "", " " ]  print.js:6:5
-undefined  print.js:9:5
-undefined
-Game.nought(1,2)
-Array [ " ", "", "X" ]  print.js:4:5
-Array [ "", "O", "O" ]  print.js:5:5
-Array [ " ", "", " " ]  print.js:6:5
-undefined  print.js:9:5
-undefined
-Game.cross(1,2)
-invalid entry  validation.js:6:9
-Array [ " ", "", "X" ]  print.js:4:5
-Array [ "", "O", "O" ]  print.js:5:5
-Array [ " ", "", " " ]  print.js:6:5
-undefined  print.js:9:5
-undefined
-Game.cross(1,3)
-invalid entry  validation.js:6:9
-Array [ " ", "", "X" ]  print.js:4:5
-Array [ "", "O", "O" ]  print.js:5:5
-Array [ " ", "", " " ]  print.js:6:5
-undefined  print.js:9:5
-undefined
-Game.cross(0,1)
-Array [ " ", "X", "X" ]  print.js:4:5
-Array [ "", "O", "O" ]  print.js:5:5
-Array [ " ", "", " " ]  print.js:6:5
-undefined  print.js:9:5
-undefined
-Game.nought(1,0)
-Array [ " ", "X", "X" ]  print.js:4:5
-Array [ "O", "O", "O" ]  print.js:5:5
-Array [ " ", "", " " ]  print.js:6:5
-O has won the game !  print.js:9:5
-undefined      
+ -   Game.nought(1,1)
+ -   Array [ " ", "", " " ]  print.js:4:5
+ -   Array [ "", "O", "" ]  print.js:5:5
+ -   Array [ " ", "", " " ]  print.js:6:5
+ -   Game.cross(0,2)
+ -   Array [ " ", "", "X" ]  print.js:4:5
+ -   Array [ "", "O", "" ]  print.js:5:5
+ -   Array [ " ", "", " " ]  print.js:6:5
+ -   Game.nought(1,2)
+ -   Array [ " ", "", "X" ]  print.js:4:5
+ -   Array [ "", "O", "O" ]  print.js:5:5
+ -   Array [ " ", "", " " ]  print.js:6:5
+ -   Game.cross(1,2)
+ -   invalid entry  validation.js:6:9
+ -   Array [ " ", "", "X" ]  print.js:4:5
+ -   Array [ "", "O", "O" ]  print.js:5:5
+ -   Array [ " ", "", " " ]  print.js:6:5
+ -   Game.cross(1,3)
+ -   invalid entry  validation.js:6:9
+ -   Array [ " ", "", "X" ]  print.js:4:5
+ -   Array [ "", "O", "O" ]  print.js:5:5
+ -   Array [ " ", "", " " ]  print.js:6:5
+ -   Game.cross(0,1)
+ -   Array [ " ", "X", "X" ]  print.js:4:5
+ -   Array [ "", "O", "O" ]  print.js:5:5
+ -   Array [ " ", "", " " ]  print.js:6:5
+ -   Game.nought(1,0)
+ -  Array [ " ", "X", "X" ]  print.js:4:5
+ -   Array [ "O", "O", "O" ]  print.js:5:5
+ -   Array [ " ", "", " " ]  print.js:6:5
+ -   O has won the game !  print.js:9:5
+     
