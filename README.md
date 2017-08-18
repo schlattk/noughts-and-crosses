@@ -42,33 +42,33 @@ Jasmine for testing 15 specs: 0 failures
 
 ## Console instructions and output ##
 
- Game.nought(1,1)
+ - Game.nought(1,1)
  -   Array [ " ", "", " " ]  print.js:4:5
  -   Array [ "", "O", "" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
- Game.cross(0,2)
+ - Game.cross(0,2)
  -   Array [ " ", "", "X" ]  print.js:4:5
  -   Array [ "", "O", "" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
- Game.nought(1,2)
+ - Game.nought(1,2)
  -   Array [ " ", "", "X" ]  print.js:4:5
  -   Array [ "", "O", "O" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
- Game.cross(1,2)
+ - Game.cross(1,2)
  -   invalid entry  validation.js:6:9
  -   Array [ " ", "", "X" ]  print.js:4:5
  -   Array [ "", "O", "O" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
- Game.cross(1,3)
+ - Game.cross(1,3)
  -   invalid entry  validation.js:6:9
  -   Array [ " ", "", "X" ]  print.js:4:5
  -   Array [ "", "O", "O" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
- Game.cross(0,1)
+ - Game.cross(0,1)
  -   Array [ " ", "X", "X" ]  print.js:4:5
  -   Array [ "", "O", "O" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
- Game.nought(1,0)
+ - Game.nought(1,0)
  -  Array [ " ", "X", "X" ]  print.js:4:5
  -   Array [ "O", "O", "O" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
