@@ -1,7 +1,6 @@
-Try our Tic Tac Toe Tech Test!
+## Tic Tac Toe Tech Test ##
 
-This is a very common tech test as it demonstrates a candidate's knowledge of basic data structures.
-The brief
+## Overview ##
 
 The rules of tic-tac-toe are as follows:
 
@@ -23,6 +22,8 @@ As a player I want to play against another player
 
 As a player I want to know when I have won or lost
 
+## Instructions ##
+
 you can play in the console. Access Game.html in the browser and play as follows:
 
 Game.board(); resets the board and can be used to restart the game.
@@ -34,33 +35,40 @@ and then column (0,1,2)
 double entries and entries outside the grid log "invalid entry", awaiting a valid entry.
 if a player wins, a winner message is displayed in the console.
 
- -   Game.nought(1,1)
+## Technology ##
+
+Javascript module pattern
+Jasmine for testing 15 specs: 0 failures
+
+## Console instructions and output ##
+
+ Game.nought(1,1)
  -   Array [ " ", "", " " ]  print.js:4:5
  -   Array [ "", "O", "" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
- -   Game.cross(0,2)
+ Game.cross(0,2)
  -   Array [ " ", "", "X" ]  print.js:4:5
  -   Array [ "", "O", "" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
- -   Game.nought(1,2)
+ Game.nought(1,2)
  -   Array [ " ", "", "X" ]  print.js:4:5
  -   Array [ "", "O", "O" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
- -   Game.cross(1,2)
+ Game.cross(1,2)
  -   invalid entry  validation.js:6:9
  -   Array [ " ", "", "X" ]  print.js:4:5
  -   Array [ "", "O", "O" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
- -   Game.cross(1,3)
+ Game.cross(1,3)
  -   invalid entry  validation.js:6:9
  -   Array [ " ", "", "X" ]  print.js:4:5
  -   Array [ "", "O", "O" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
- -   Game.cross(0,1)
+ Game.cross(0,1)
  -   Array [ " ", "X", "X" ]  print.js:4:5
  -   Array [ "", "O", "O" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
- -   Game.nought(1,0)
+ Game.nought(1,0)
  -  Array [ " ", "X", "X" ]  print.js:4:5
  -   Array [ "O", "O", "O" ]  print.js:5:5
  -   Array [ " ", "", " " ]  print.js:6:5
